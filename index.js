@@ -78,4 +78,34 @@ const street = address.street;
 const city = address.city;
 const country = address.country;
 
+const { street: st} = address;
+const paleta = ['#000000', '#AC1848', '#BFB9A4', '#888B90', '#AAB2B7', '#131315'];
+const [background, ...gama] = paleta;
+//console.log(background,gama);
 
+/* 
+const first = [1,2,3];
+const second = [4,5,6];
+//const combined = first.concat(second);
+const combined = [...first,...first];
+console.log(combined);
+const clone = [...first];
+console.log(first);
+console.log(clone);
+*/
+const first = {name: 'Martin'};
+const second = {job: 'Dev'};
+
+const combined = {...first,...second,location: "Argentina"};
+console.log(combined);
+
+const clone ={...first};
+
+
+
+
+const person04 = new Person("Martin");
+console.log("Martin");
+
+const teacher = new Teacher("Julio","Evil Genius");
+teacher.teach();
