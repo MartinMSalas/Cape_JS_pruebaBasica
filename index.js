@@ -15,13 +15,13 @@ const person = {
 
     }
 }
-person.talk;
+//person.talk;
 const targetMember = 'name';
 person[targetMember] = 'John';
 //person.walk();
 
 const walk = person.walk.bind(person);
-walk();
+//walk();
 const square = function (number){
     return number * number;
     
@@ -45,6 +45,37 @@ const person2 = {
     }
 };
 console.log("------------------------------------------")
-person2.talk();
+//person2.talk();
+//person.walk();
+
+const activeJobs = jobs.filter(function(job) { return job.isActive;});
+const activeJobs02 = jobs.filter ( cacholo => cacholo.isActive);
+//console.log(activeJobs02);
+const person03 = {
+    talk() {
+        var self = this;
+        setTimeout(function() {
+            
+            console.log("self", self);
+        },1000);
+    }
+    
+};
+
+//person03.talk();
+
+let colors = ['red','green','blue','orange'];
+console.log(colors);
+const items = colors.map(color => `<li>${color}</li>`);
+console.log(items);
+
+const address = {
+    street: '',
+    city: '',
+    country: ''
+};
+const street = address.street;
+const city = address.city;
+const country = address.country;
 
 
